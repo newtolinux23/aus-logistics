@@ -1,39 +1,62 @@
 {{ define "main" }}
+<!-- Hero Section -->
 <div class="relative bg-gray-900 overflow-hidden">
     <div class="absolute inset-0">
-        <img class="w-full h-full object-cover opacity-40" src="https://images.unsplash.com/photo-1601625115035-d830ef862775?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Delivery Truck">
+        <!-- New "Blending" Image: A professional dark logistics shot -->
+        <img class="w-full h-full object-cover opacity-30" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="FedEx Logistics Background">
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">We Deliver <span class="text-orange">Excellence</span></h1>
-        <p class="mt-6 text-xl text-gray-300 max-w-3xl">AUS Logistics is a premier Independent Service Provider for FedEx Ground. We are dedicated to safety, efficiency, and treating our drivers like family.</p>
+        <p class="mt-6 text-xl text-gray-300 max-w-3xl">AUS Logistics is a premier Independent Service Provider for FedEx Ground serving the DFW Metroplex. We are dedicated to safety, efficiency, and treating our drivers like family.</p>
         <div class="mt-10">
-            <a href="/careers/" class="bg-purple hover:bg-purple-700 text-white font-bold py-4 px-8 rounded shadow-lg text-lg">Join Our Team &rarr;</a>
+            <a href="/careers/" class="bg-purple hover:bg-purple-700 text-white font-bold py-4 px-8 rounded shadow-lg text-lg transition duration-300">Join Our Team &rarr;</a>
         </div>
     </div>
 </div>
+
+<!-- Features Section -->
 <div class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
             <h2 class="text-base text-purple font-semibold tracking-wide uppercase">Why Drive With Us?</h2>
             <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">More Than Just A Job</p>
         </div>
-        <div class="mt-10">
+        <div class="mt-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-50 rounded-lg border border-gray-100 shadow-sm">
-                    <div class="text-4xl mb-4">🛡️</div>
-                    <h3 class="text-lg font-medium text-gray-900">Safety First</h3>
-                    <p class="mt-2 text-gray-500">Modern fleet with latest safety tech.</p>
+                
+                <!-- Feature 1: Safety (Shield Icon) -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple/10 rounded-lg flex items-center justify-center mb-4 text-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900">Safety First</h3>
+                    <p class="mt-2 text-gray-500">We operate a modern fleet with the latest safety technology. Your safety is our #1 priority.</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-lg border border-gray-100 shadow-sm">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-lg font-medium text-gray-900">Weekly Pay</h3>
-                    <p class="mt-2 text-gray-500">Direct deposit & performance bonuses.</p>
+
+                <!-- Feature 2: Pay (Dollar Icon) -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-orange/10 rounded-lg flex items-center justify-center mb-4 text-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900">Competitive Pay</h3>
+                    <p class="mt-2 text-gray-500">Weekly direct deposit, peak season bonuses, and paid training. We value your hard work.</p>
                 </div>
-                <div class="p-6 bg-gray-50 rounded-lg border border-gray-100 shadow-sm">
-                    <div class="text-4xl mb-4">🏠</div>
-                    <h3 class="text-lg font-medium text-gray-900">Home Daily</h3>
-                    <p class="mt-2 text-gray-500">Local routes mean you sleep in your own bed.</p>
+
+                <!-- Feature 3: Home (House Icon) -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple/10 rounded-lg flex items-center justify-center mb-4 text-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900">Home Daily</h3>
+                    <p class="mt-2 text-gray-500">Our local P&D routes ensure you are home every night with your family.</p>
                 </div>
+
             </div>
         </div>
     </div>
