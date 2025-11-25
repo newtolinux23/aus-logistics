@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | FedEx Ground Contractor</title>
+    
+    <!-- FAVICON LINK -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -60,7 +64,6 @@
             </div>
             <div>
                 <h3 class="text-xl font-bold mb-4">Contact</h3>
-                <!-- Address pulls from config file automatically -->
                 <p class="text-gray-400">📍 {{ .Site.Params.address }}</p>
                 <p class="text-gray-400">📞 {{ .Site.Params.phone }}</p>
                 <p class="text-gray-400">✉️ {{ .Site.Params.email }}</p>
