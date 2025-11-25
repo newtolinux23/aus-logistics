@@ -27,3 +27,8 @@ theme = 'aus-theme'
   name = "Drive With Us"
   url = "/careers/"
   weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
