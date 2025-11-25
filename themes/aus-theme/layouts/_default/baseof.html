@@ -18,6 +18,8 @@
     </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
@@ -35,25 +37,39 @@
             </div>
         </div>
     </nav>
+
+    <!-- Main Content -->
     <main class="flex-grow">
         {{ block "main" . }}{{ end }}
     </main>
+
+    <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <h3 class="text-xl font-bold mb-4">AUS Logistics</h3>
-                <p class="text-gray-400">Safety. Integrity. Service.</p>
+                <p class="text-gray-400">Reliability you can trust.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="/" class="hover:text-orange">Home</a></li>
+                    <li><a href="/about/" class="hover:text-orange">About Us</a></li>
+                    <li><a href="/careers/" class="hover:text-orange">Driver Application</a></li>
+                </ul>
             </div>
             <div>
                 <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <!-- Address pulls from config file automatically -->
                 <p class="text-gray-400">📍 {{ .Site.Params.address }}</p>
                 <p class="text-gray-400">📞 {{ .Site.Params.phone }}</p>
                 <p class="text-gray-400">✉️ {{ .Site.Params.email }}</p>
             </div>
         </div>
         <div class="text-center mt-12 pt-8 border-t border-gray-800 text-gray-500 text-sm">
-            &copy; {{ now.Year }} AUS Logistics. Not officially affiliated with FedEx Corporation.
+            &copy; 2025 AUS Logistics. "Delivering excellence, one mile at a time."
         </div>
     </footer>
+
 </body>
 </html>

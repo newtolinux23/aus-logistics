@@ -8,7 +8,7 @@ theme = 'aus-theme'
   author = "AUS Logistics"
   phone = "(512) 555-0199"
   email = "recruiting@auslogistics.com"
-  address = "Austin, TX"
+  address = "1901 Joel East Rd, Fort Worth, TX 76140"
 
 [[menu.main]]
   identifier = "home"
