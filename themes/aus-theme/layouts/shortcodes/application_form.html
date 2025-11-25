@@ -1,0 +1,41 @@
+<form name="driver-application" method="POST" data-netlify="true" action="/success" class="grid grid-cols-1 gap-y-6 mt-8 p-6 bg-gray-50 border border-gray-200 rounded-lg">
+    <!-- Hidden input for Netlify to recognize the form name -->
+    <input type="hidden" name="form-name" value="driver-application" />
+    
+    <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input type="text" name="name" id="name" required class="mt-1 py-3 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+    </div>
+
+    <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+        <input type="tel" name="phone" id="phone" required class="mt-1 py-3 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+    </div>
+
+    <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+        <input type="email" name="email" id="email" required class="mt-1 py-3 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+    </div>
+
+    <div>
+        <label for="experience" class="block text-sm font-medium text-gray-700">Driving Experience</label>
+        <select name="experience" id="experience" class="mt-1 py-3 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500">
+            <option>Less than 1 year</option>
+            <option>1-2 Years</option>
+            <option>3-5 Years</option>
+            <option>5+ Years</option>
+            <option>I have my CDL</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Anything else we should know?</label>
+        <textarea name="message" id="message" rows="3" class="mt-1 py-3 px-4 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500"></textarea>
+    </div>
+
+    <div>
+        <button type="submit" class="w-full inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-orange hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">
+            Submit Application
+        </button>
+    </div>
+</form>
