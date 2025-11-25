@@ -1,0 +1,29 @@
+baseURL = 'https://auslogistics.com/'
+languageCode = 'en-us'
+title = 'AUS Logistics'
+theme = 'aus-theme'
+
+[params]
+  description = "Premier FedEx Ground Contracted Service Provider"
+  author = "AUS Logistics"
+  phone = "(512) 555-0199"
+  email = "recruiting@auslogistics.com"
+  address = "Austin, TX"
+
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "About Us"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "careers"
+  name = "Drive With Us"
+  url = "/careers/"
+  weight = 3

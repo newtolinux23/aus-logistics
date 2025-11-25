@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | FedEx Ground Contractor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --fedex-purple: #4D148C;
+            --fedex-orange: #FF6600;
+            --fedex-grey: #333333;
+        }
+        .bg-purple { background-color: var(--fedex-purple); }
+        .text-purple { color: var(--fedex-purple); }
+        .bg-orange { background-color: var(--fedex-orange); }
+        .text-orange { color: var(--fedex-orange); }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-50 font-sans text-gray-800">
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold tracking-tight text-gray-900">
+                        <span class="text-purple">AUS</span> Logistics
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="text-gray-700 hover:text-purple font-medium px-3 py-2 rounded-md text-lg">{{ .Name }}</a>
+                    {{ end }}
+                    <a href="/careers/" class="bg-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full font-bold transition">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-grow">
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="bg-gray-900 text-white pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">AUS Logistics</h3>
+                <p class="text-gray-400">Safety. Integrity. Service.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact</h3>
+                <p class="text-gray-400">📍 {{ .Site.Params.address }}</p>
+                <p class="text-gray-400">📞 {{ .Site.Params.phone }}</p>
+                <p class="text-gray-400">✉️ {{ .Site.Params.email }}</p>
+            </div>
+        </div>
+        <div class="text-center mt-12 pt-8 border-t border-gray-800 text-gray-500 text-sm">
+            &copy; {{ now.Year }} AUS Logistics. Not officially affiliated with FedEx Corporation.
+        </div>
+    </footer>
+</body>
+</html>
