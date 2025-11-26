@@ -2,9 +2,8 @@
 <!-- Hero Section -->
 <div class="relative bg-gray-900 overflow-hidden">
     <div class="absolute inset-0">
-        <!-- New Image: Happy Delivery Driver with Package -->
-        <!-- We use object-top to ensure the driver's face is visible -->
-        <img class="w-full h-full object-cover object-top opacity-30" src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2070&auto=format&fit=crop" alt="Happy Delivery Driver">
+        <!-- We use the site BaseURL to ensure the link is perfect -->
+        <img class="w-full h-full object-cover object-center opacity-40" src="{{ .Site.BaseURL }}images/hero.jpg" alt="FedEx Delivery Driver">
     </div>
     <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">We Deliver <span class="text-orange">Excellence</span></h1>
@@ -15,7 +14,7 @@
     </div>
 </div>
 
-<!-- Features Section -->
+<!-- Features Section (Unchanged) -->
 <div class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
@@ -24,40 +23,27 @@
         </div>
         <div class="mt-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Feature 1: Safety (Shield Icon) -->
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-purple/10 rounded-lg flex items-center justify-center mb-4 text-purple">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900">Safety First</h3>
-                    <p class="mt-2 text-gray-500">We operate a modern fleet with the latest safety technology. Your safety is our #1 priority.</p>
+                    <p class="mt-2 text-gray-500">We operate a modern fleet with the latest safety technology.</p>
                 </div>
-
-                <!-- Feature 2: Pay (Dollar Icon) -->
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-orange/10 rounded-lg flex items-center justify-center mb-4 text-orange">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900">Competitive Pay</h3>
-                    <p class="mt-2 text-gray-500">Weekly direct deposit, peak season bonuses, and paid training. We value your hard work.</p>
+                    <p class="mt-2 text-gray-500">Weekly direct deposit, peak season bonuses, and paid training.</p>
                 </div>
-
-                <!-- Feature 3: Home (House Icon) -->
                 <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
                     <div class="w-12 h-12 bg-purple/10 rounded-lg flex items-center justify-center mb-4 text-purple">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900">Home Daily</h3>
-                    <p class="mt-2 text-gray-500">Our local P&D routes ensure you are home every night with your family.</p>
+                    <p class="mt-2 text-gray-500">Our local P&D routes ensure you are home every night.</p>
                 </div>
-
             </div>
         </div>
     </div>
