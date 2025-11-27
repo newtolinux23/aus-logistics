@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | FedEx Ground Contractor</title>
     
-    <!-- FAVICON LINK -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     
+    <!-- TAILWIND CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- ANIMATION LIBRARY (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         :root {
             --fedex-purple: #4D148C;
@@ -19,15 +24,15 @@
         .text-purple { color: var(--fedex-purple); }
         .bg-orange { background-color: var(--fedex-orange); }
         .text-orange { color: var(--fedex-orange); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="flex flex-col min-h-screen bg-gray-50 font-sans text-gray-800">
 
-    <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
-                <div class="flex items-center">
+                <div class="flex items-center space-x-2">
                     <a href="/" class="text-2xl font-bold tracking-tight text-gray-900">
                         <span class="text-purple">AUS</span> Logistics
                     </a>
@@ -42,19 +47,21 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
     <main class="flex-grow">
         {{ block "main" . }}{{ end }}
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white pt-12 pb-8">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
+            <div data-aos="fade-up">
                 <h3 class="text-xl font-bold mb-4">AUS Logistics</h3>
                 <p class="text-gray-400">Reliability you can trust.</p>
+                <div class="mt-4 flex items-center bg-white rounded p-2 w-fit">
+                    <span class="text-xs text-gray-500 mr-2 uppercase font-bold">Contractor for</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/FedEx_Express.svg/1200px-FedEx_Express.svg.png" alt="FedEx Logo" class="h-6">
+                </div>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
                 <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="/" class="hover:text-orange">Home</a></li>
@@ -62,7 +69,7 @@
                     <li><a href="/careers/" class="hover:text-orange">Driver Application</a></li>
                 </ul>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-delay="200">
                 <h3 class="text-xl font-bold mb-4">Contact</h3>
                 <p class="text-gray-400">📍 {{ .Site.Params.address }}</p>
                 <p class="text-gray-400">📞 {{ .Site.Params.phone }}</p>
@@ -74,5 +81,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
 </body>
 </html>
